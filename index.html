@@ -99,28 +99,38 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .cmp .good li:before{content:"✓ ";color:var(--accent);font-weight:700}
 @media (prefers-reduced-motion:reduce){.reveal,.m,.tag{opacity:1;transform:none;animation:none;transition:none}}
 @media (max-width:820px){.burger{display:block}nav .btn{display:none}.cmp{grid-template-columns:1fr}}
+.offer{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.price .big{font-size:2rem;font-weight:800;color:var(--accent);line-height:1.2;margin-top:12px}
+.price .big small{display:block;font-size:.9rem;font-weight:500;color:var(--muted)}
+.price p{margin:16px 0 20px}
+.pill{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:4px 12px;border-radius:999px;font-size:.8rem;font-weight:700}
+.ticks{list-style:none;margin:10px 0 18px;padding:0;color:var(--muted)}
+.ticks li{padding:6px 0}
+.ticks li:before{content:"✓ ";color:var(--accent);font-weight:700}
+.guar{margin-top:18px;border:1px dashed var(--accent);border-radius:16px;padding:18px 22px}
+@media (max-width:820px){.offer{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav>
  <a class="logo" href="#top">Nexus<span>Scales</span></a>
- <ul><li><a href="#solucao">Solução</a></li><li><a href="#comparacao">Antes e depois</a></li><li><a href="#simulador">Simulador</a></li><li><a href="#processo">Como funciona</a></li><li><a href="#faq">Dúvidas</a></li></ul>
+ <ul><li><a href="#solucao">Solução</a></li><li><a href="#comparacao">Antes e depois</a></li><li><a href="#simulador">Simulador</a></li><li><a href="#oferta">Preço</a></li><li><a href="#processo">Como funciona</a></li><li><a href="#faq">Dúvidas</a></li></ul>
  <a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener">Falar connosco</a>
  <button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </nav>
-<div class="mmenu" id="mm"><a href="#solucao">Solução</a><a href="#comparacao">Antes e depois</a><a href="#simulador">Simulador</a><a href="#processo">Como funciona</a><a href="#faq">Dúvidas</a><a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener" style="text-align:center;color:var(--on-accent)">Falar no WhatsApp</a></div></div></header>
+<div class="mmenu" id="mm"><a href="#solucao">Solução</a><a href="#comparacao">Antes e depois</a><a href="#simulador">Simulador</a><a href="#oferta">Preço</a><a href="#processo">Como funciona</a><a href="#faq">Dúvidas</a><a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener" style="text-align:center;color:var(--on-accent)">Falar no WhatsApp</a></div></div></header>
 
 <main id="top">
 <section><div class="wrap hero">
  <div>
-  <span class="eyebrow">Para imobiliárias</span>
+  <span class="eyebrow">Sistema Zero Contactos Perdidos</span>
   <h1>A sua imobiliária a atender clientes 24 horas por dia</h1>
-  <p class="lead">Um agente de IA no WhatsApp que responde em segundos, qualifica o interessado e marca a visita, enquanto a sua equipa faz o que só ela pode fazer: fechar negócio.</p>
+  <p class="lead">Um agente de IA no WhatsApp que responde em segundos, qualifica o interessado e marca a visita, enquanto a sua equipa faz o que só ela pode fazer: fechar negócio. Instalado em 5 dias, sem contratar mais ninguém.</p>
   <div class="cta-row">
    <a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener">Quero ver uma demonstração →</a>
    <a class="btn ghost" href="#simulador">Simular o meu caso</a>
   </div>
-  <div class="checks"><span>Configuração rápida</span><span>Feito à medida</span><span>Em português</span></div>
+  <div class="checks"><span>Instalação em 5 dias</span><span>Garantia de 30 dias</span><span>Maputo e Matola</span></div>
  </div>
  <div class="phone" aria-label="Exemplo de conversa no WhatsApp">
   <div class="phone-top"><span class="dot"></span>Agente da Imobiliária</div>
@@ -135,18 +145,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </div></section>
 
 <section style="padding-top:0"><div class="wrap stats">
- <div class="stat"><b>24/7</b><small>atendimento sem pausas</small></div>
- <div class="stat"><b>Segundos</b><small>para a primeira resposta</small></div>
- <div class="stat"><b>1 painel</b><small>para ver todas as conversas</small></div>
+ <div class="stat"><b>24/7</b><small>atendimento todos os dias</small></div>
+ <div class="stat"><b>2 min</b><small>tempo máximo de resposta garantido</small></div>
+ <div class="stat"><b>5 dias</b><small>para o agente estar a funcionar</small></div>
 </div></section>
 
 <section id="solucao"><div class="wrap">
- <span class="eyebrow">O que faz</span>
- <h2>Nenhum cliente fica sem resposta</h2>
+ <span class="eyebrow">O que recebe</span>
+ <h2>Seis ferramentas, um sistema que não deixa ninguém sem resposta</h2>
  <div class="grid3">
-  <div class="card"><div class="ic">💬</div><h3>Responde na hora</h3><p>Perguntas sobre preço, localização e disponibilidade respondidas de dia e de madrugada.</p></div>
-  <div class="card"><div class="ic">🎯</div><h3>Qualifica o interessado</h3><p>Pergunta o essencial (arrendar ou comprar, zona, orçamento) e passa à equipa apenas contactos sérios.</p></div>
-  <div class="card"><div class="ic">📅</div><h3>Marca visitas</h3><p>Propõe horários e confirma a visita, sem ninguém a escrever mensagem por mensagem.</p></div>
+  <div class="card"><div class="ic">💬</div><h3>Agente Sempre Ligado</h3><p>Responde no WhatsApp todos os dias, de dia e de madrugada.</p></div>
+  <div class="card"><div class="ic">🏠</div><h3>Catálogo Inteligente</h3><p>Responde a preço, zona e disponibilidade com base nos seus imóveis.</p></div>
+  <div class="card"><div class="ic">🎯</div><h3>Filtro de Clientes Sérios</h3><p>Pergunta o essencial e passa à equipa só quem quer mesmo comprar ou arrendar.</p></div>
+  <div class="card"><div class="ic">📅</div><h3>Marcação Automática de Visitas</h3><p>Propõe horários e confirma a visita na primeira conversa.</p></div>
+  <div class="card"><div class="ic">🔁</div><h3>Recuperação de Quem Sumiu</h3><p>Volta a contactar quem deixou de responder, sem ninguém se lembrar.</p></div>
+  <div class="card"><div class="ic">📊</div><h3>Relatório Semanal</h3><p>Resumo dos contactos e visitas, enviado por WhatsApp e por email.</p></div>
  </div>
 </div></section>
 
@@ -178,12 +191,34 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
  </div>
 </div></section>
 
+<section id="oferta"><div class="wrap">
+ <span class="eyebrow">O investimento</span>
+ <h2>Um preço claro, com garantia</h2>
+ <p class="lead">Uma recepcionista a tempo inteiro em Maputo custa a partir de cerca de 14.000 MZN por mês e só atende em horário de escritório. O agente atende todos os dias, a qualquer hora.</p>
+ <div class="offer">
+  <div class="card price">
+   <span class="pill">Preço de lançamento · primeiras 5 imobiliárias</span>
+   <div class="big">15.000 MZN <small>instalação única</small></div>
+   <div class="big">+ 5.000 MZN <small>por mês, com suporte e ajustes</small></div>
+   <p>Pagamento por M-Pesa, transferência ou outro meio. Pague o primeiro ano adiantado com 30% de desconto: <b>52.500 MZN</b> em vez de 75.000 MZN.</p>
+   <a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener">Quero o preço de lançamento →</a>
+  </div>
+  <div class="card">
+   <h3>Inclui</h3>
+   <ul class="ticks"><li>Agente Sempre Ligado</li><li>Catálogo Inteligente</li><li>Filtro de Clientes Sérios</li><li>Marcação Automática de Visitas</li><li>Recuperação de Quem Sumiu</li><li>Relatório Semanal</li></ul>
+   <h3>Bónus</h3>
+   <ul class="ticks"><li>Guião com as 20 perguntas mais comuns de clientes, no tom da sua imobiliária</li><li>Mensagem pronta para reativar contactos antigos</li><li>Sessão de formação para a sua equipa</li></ul>
+  </div>
+ </div>
+ <div class="guar"><b>Garantia de 30 dias.</b> Se o agente não responder a todos os contactos em até 2 minutos, trabalhamos sem cobrar até cumprir, ou devolvemos o que pagou.</div>
+</div></section>
+
 <section id="processo"><div class="wrap">
  <span class="eyebrow">Como funciona</span>
  <h2>Do primeiro contacto ao agente a trabalhar</h2>
  <div class="steps">
   <div class="step"><b>01</b><h3>Conversa</h3><p>Percebemos a sua carteira de imóveis e como a sua equipa fala com os clientes.</p></div>
-  <div class="step"><b>02</b><h3>Configuração</h3><p>Montamos o agente com os seus imóveis, preços e regras de atendimento.</p></div>
+  <div class="step"><b>02</b><h3>Configuração</h3><p>Montamos o agente com os seus imóveis, preços e regras de atendimento. Fica pronto em 5 dias.</p></div>
   <div class="step"><b>03</b><h3>Testes</h3><p>Testa o agente consigo antes de ir para o ar.</p></div>
   <div class="step"><b>04</b><h3>Operação</h3><p>O agente atende e a equipa recebe os contactos prontos para visita.</p></div>
  </div>
@@ -195,12 +230,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
  <details><summary>Preciso de perceber de tecnologia?</summary><p>Não. Tratamos da configuração e dos ajustes. Você acompanha as conversas num painel simples.</p></details>
  <details><summary>O agente fala como uma pessoa?</summary><p>É configurado com o tom da sua imobiliária e, quando o cliente pede, passa a conversa para um humano da equipa.</p></details>
  <details><summary>Funciona com o número de WhatsApp que já uso?</summary><p>Conversamos sobre a melhor forma de ligar o agente ao seu número durante a configuração.</p></details>
- <details><summary>Quanto custa?</summary><p>Depende do número de imóveis e de conversas. Fale connosco para receber uma proposta clara.</p></details>
+ <details><summary>Quanto custa?</summary><p>15.000 MZN de instalação única e 5.000 MZN por mês. Quem paga o primeiro ano adiantado tem 30% de desconto e paga 52.500 MZN.</p></details>
+ <details><summary>Quanto tempo demora a instalação?</summary><p>5 dias, desde que nos envie os dados dos seus imóveis.</p></details>
+ <details><summary>E se não funcionar?</summary><p>Tem garantia de 30 dias: se o agente não responder a todos os contactos em até 2 minutos, trabalhamos sem cobrar até cumprir, ou devolvemos o que pagou.</p></details>
+ <details><summary>Em que zonas trabalham?</summary><p>Atendemos imobiliárias em Maputo e Matola.</p></details>
 </div></section>
 
 <section><div class="wrap"><div class="final">
  <h2>Pronto para não perder mais nenhum cliente?</h2>
- <p class="lead">Fale connosco no WhatsApp e veja o agente a trabalhar com imóveis como os seus.</p>
+ <p class="lead">As primeiras 5 imobiliárias têm preço de lançamento. Fale connosco no WhatsApp e veja o agente a trabalhar com imóveis como os seus.</p>
  <div class="cta-row" style="justify-content:center"><a class="btn" href="https://wa.me/258856271154?text=Ol%C3%A1%2C%20quero%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20NexusScales" target="_blank" rel="noopener">Falar no WhatsApp →</a></div>
 </div></div></section>
 </main>
